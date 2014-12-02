@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}Páginas web en Córdoba {% endblock %}
+{% block content %} 
+
+<section class="products-section">
+	<h1>Diseño y desarrollo web</h1>
+	<div class="circle">
+			<span class="icon-display"></span>
+		</div>
+		<br>
+	<h2>Elige el plan que mejor se adapta a tus necesidades.</h2>
+<article class="products">
+	<div class="products-item">
+		<div class="products-head">
+		<h3><strong>Básica</strong></h3>
+		</div>
+		<p><span class="icon-checkmark-circle"></span> 4 Secciones a elección.</p>
+		<p><span class="icon-checkmark-circle"></span> Registro de Dominio</p>
+		<p><span class="icon-checkmark-circle"></span> Alta en Buscadores</p>
+		<p><span class="icon-checkmark-circle"></span> Formulario de contacto</p>
+		<p><span class="icon-checkmark-circle"></span> Integración Redes Sociales</p>
+		<p><span class="icon-checkmark-circle"></span> Google Analytics</p>
+		<div class="precio">$ 1.999</div>
+<div class="btn-products"><a href="{% url "contacto" %}">Contratar</a></div>
+		
+		
+	</div>
+	<div class="products-item">
+		<div class="products-head">
+		<h3><strong>Corporativa</strong></h3>
+		</div>
+		<p><span class="icon-checkmark-circle"></span> 7 Secciones a elección.</p>
+		<p><span class="icon-checkmark-circle"></span> Registro de Dominio</p>
+		<p><span class="icon-checkmark-circle"></span> Alta en Buscadores</p>
+		<p><span class="icon-checkmark-circle"></span> Formulario de contacto</p>
+		<p><span class="icon-checkmark-circle"></span> Integración Redes Sociales</p>
+		<p><span class="icon-checkmark-circle"></span> Google Analytics</p>
+		<div class="precio">$ 3.299</div>
+		<div class="btn-products"><a href="{% url "contacto" %}">Contratar</a></div>
+	</div>
+	<div class="products-item">
+		<div class="products-head">
+		<h3><strong>Profesional</strong></h3>
+		</div>
+		<p><span class="icon-checkmark-circle"></span> Secciones ilimitadas</p>
+		<p><span class="icon-checkmark-circle"></span> Registro de Dominio</p>
+		<p><span class="icon-checkmark-circle"></span> Alta en Buscadores</p>
+		<p><span class="icon-checkmark-circle"></span> Formulario de contacto</p>
+		<p><span class="icon-checkmark-circle"></span> Integración Redes Sociales</p>
+		<p><span class="icon-checkmark-circle"></span> Google Analytics</p>
+		<div class="precio">$ 4.499</div>
+		<div class="btn-products"><a href="{% url "contacto" %}">Contratar</a></div>
+	</div>
+	<div class="products-item">
+		<div class="products-head">
+		<h3><strong>Autoadministrable</strong></h3>
+		</div>
+		<p><span class="icon-checkmark-circle"></span> Secciones ilimitadas</p>	
+		<p><span class="icon-checkmark-circle"></span> Registro de Dominio</p>
+		<p><span class="icon-checkmark-circle"></span> Alta en Buscadores</p>
+		<p><span class="icon-checkmark-circle"></span> Formulario de contacto</p>
+		<p><span class="icon-checkmark-circle"></span> Integración Redes Sociales</p>
+		<p><span class="icon-checkmark-circle"></span> Google Analytics</p>
+		<p><span class="icon-checkmark-circle"></span> Panel Administración</p>
+		<div class="precio">$ 5.199</div>
+		<div class="btn-products"><a href="{% url "contacto" %}">Contratar</a></div>
+	</div>
+
+	
+</article>
+
+</section>
+
+{% endblock %}

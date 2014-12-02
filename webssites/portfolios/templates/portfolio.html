@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Diseño web - Portfolio {% endblock %}
+{% block content %} 
+
+<h1>Nuestros últimos trabajos</h1>
+<section class="section80">
+
+
+	<article class="portfolio" >
+		
+		<ul>
+			
+			{% for p in port %}
+			
+			<li>
+				<div class="portfolio-item">
+					
+					<figure>
+						<a href="{{p.url}}" target="blank">
+							<div class="vista"> 
+    							<img src="{{MEDIA_URL}}/{{p.image}}">
+    						<div class="mascara"> 
+                   				<h2><span class="icon-link"></span></h2> 
+                    
+                  			</div> 
+             				</div> 
+    					</a>
+    				</figure>
+ 					<div class="item-detail">
+ 						<p class="item-title">
+ 							{{p.titulo}}	
+ 						</p>
+ 						<p>
+ 							{{p.descripcion}}
+ 						</p>
+ 						<div class="more"><a href="{{p.url}}">Visitar</a></div>
+ 					</div>
+			</div>
+			</li>
+			
+		{% endfor %}
+		</ul>
+ 		
+ 		
+ 	</article>
+
+
+</section>
+	
+
+
+{% endblock %}

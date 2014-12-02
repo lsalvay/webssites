@@ -1,0 +1,738 @@
+azul = #3498db
+celeste = #169AE8 
+intermedio = #25E8FF
+verde_oscuro = #16E8C5
+verde_claro = #68DD58
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	-o-border-radius arguments
+	-ms-border-radius arguments
+	border-radius arguments
+
+
+
+box-shadow(offset-x, args)
+      got-offset-x offset-x
+      -webkit-box-shadow offset-x args
+      -moz-box-shadow offset-x args
+      box-shadow offset-x args
+
+
+body
+	background url("../images/bg.gif") repeat
+	color rgba(0, 0, 0, 0.7)
+	font-size 16px
+	height 100%
+	margin 0
+	padding 0
+	text-align center
+
+h1
+	font-size 1.5em
+	margin-bottom 2em
+h2
+	font-size 1.3em
+h3
+	font-size 1.1em
+	
+header
+	background #fff
+	height 70px
+	width 100%
+	position fixed
+	z-index 999
+	border-bottom 1px solid #ccc
+	nav
+		margin 0 auto	
+	ul
+		margin 0 auto
+	li
+		display inline-block
+		font-weight bold
+		list-style none
+		padding 0.4em
+		margin-top 5px
+		position relative
+		vertical-align top
+		cursor pointer
+		
+	li:hover
+		a,span
+			color rgba(0, 0, 0, 0.5)		
+	a
+		font-size 1.2em
+		text-decoration none
+		color rgba(0, 0, 0, 0.9)
+	
+.submenu
+	font-size 0.8em
+	position absolute
+	top 30px
+	left 1px
+	display none
+	width 120px
+	li
+		display block
+		text-align left
+		
+#main-nav
+	margin-top 0.5em	 
+	li:hover
+		ul
+			background #ecf0f1
+			display block
+			margin 0
+			padding 0
+			li
+				a
+					color rgba(0, 0, 0, 0.7)
+					
+			li:hover
+				a
+					color rgba(0, 0, 0, 0.9)
+				.icon-uniE6D8:before
+						display inline-block
+						color rgba(0, 0, 0, 0.9)
+
+#header-wrap
+	position relative
+#header-logo
+	width 19%
+	position absolute
+	top 0
+	left 10px
+#logo-wrap
+	position relative	
+	a
+		position absolute
+		left 20px
+		img 
+			height 45px	
+	p
+		color #172983
+		position absolute
+		top 10px
+		left 80px
+		margin 0
+		font-size 1.5em
+		font-weight bold
+#main-nav
+	width 60%
+.content-wrap
+	padding-top 70px
+.contact-OK
+	min-height 200px
+	text-align center
+	p
+		font-size 1.3em
+		font-weight	bold
+.social
+	width 21%
+	position absolute
+	top 0px
+	right 10px
+	font-size 1.2em
+	a 
+		padding 3px
+	#face 
+		span:hover 
+			color #3b5999
+	#twitt
+		span:hover 
+			color #1dcaff
+	#goog
+		span:hover 
+			color #dd4b39
+
+.intro
+	background url("../images/teclado1.jpg") repeat
+	color #fff
+	height auto
+	min-height 400px
+	article
+		margin 0 auto
+		width 80%
+	
+	h2
+		color rgba(255, 255, 255, 0.9)
+		width 60%
+		margin 0 auto
+
+#main-header
+	background url("../images/image_header2.png") no-repeat center right
+	height 100%
+	margin 0 8em
+	text-align left
+	background-size 35%
+
+.descrip-header
+	padding 40px 0
+	h1
+		margin-left 0.6em
+		margin-top	0
+		margin-bottom 1em
+		font-size 38px
+		color #fff
+	li
+		font-size 19px
+	a 
+		margin-left 1.3em
+	span
+		font-weight bold
+.btn
+	border none
+	border-bottom 5px solid transparent
+	-o-border-radius 5px
+	-ms-border-radius 5px
+	-moz-border-radius 5px
+	-webkit-border-radius 5px
+	border-radius 5px
+	color #fff
+	cursor pointer
+	display inline-block
+	zoom 1
+	-ms-zoom 1
+	-webkit-zoom 1
+	-moz-transform scale(1,1)
+	-moz-transform-origin left center
+	font-size 16px
+	font-weight 600
+	padding 10px 20px
+	position relative
+	text-decoration none
+	text-transform uppercase
+	vertical-align top
+	white-space nowrap
+.yellow
+	background: #ffc33e;
+	color: #b36929;
+	border-color: #b36929;
+		
+
+.btn-products
+	color #fff
+	margin 1em
+	padding 0.5em
+	text-align center
+	
+	a 
+		background #DB3434
+		border-radius 5px
+		color #fff
+		text-decoration none
+		padding 0.5em 2em
+		border 1px red inset
+.btn-products a:hover
+		background-color #B83737		
+
+.points
+	margin 1em auto	
+.area-circles 
+	margin 2em auto 4em auto
+	width 85%
+	padding-bottom 5px
+	p
+		display inline-block
+		vertical-align top
+		width 80%
+.circle
+	margin 0 auto
+	width 130px
+	height 130px
+	background #3B4C5C
+	border-radius(50%)
+	position relative
+	transform rotateY(0deg)
+	transition-duration 0.5s
+	-webkit-transform rotateY(0deg)
+	-webkit-transition-duration 2s
+	span
+		margin-top 0.9em
+		display inline-block
+		font-size 3em
+		color #fff
+.circle:hover
+	background rgba(23, 41, 131, 0.55)
+	transform rotateY(180deg)
+	transition-duration 0.5s
+	-webkit-transform rotateY(180deg)
+	-webkit-transition-duration 2s
+.separador
+	border-bottom 2px dashed #3b4c5c
+.more 
+	color #fff
+	width 80px
+	height 23px
+	background azul
+	margin 0 auto
+	border-radius(5px)
+	padding 0.2em
+	a 
+		color #fff
+		text-decoration none
+.more:hover
+	background verde_claro 
+.steps
+	background url("../images/bg_1.gif") repeat
+	color #fff
+	padding-bottom 2em
+	
+.step
+	width 20%
+	height auto
+	margin 1.5em
+	display inline-block
+	vertical-align top
+	position relative
+	span
+		position absolute
+		right 0px
+		font-size 4em
+		top -17px
+		margin-right -60px
+.number
+	border 1px dashed
+	border-radius 50%
+	width 1.3em
+	margin 0 auto
+	padding 0.3em
+	background #172983
+.marketing
+	width 80%
+	margin 0 auto
+	p
+		font-weight bold
+		color red
+	
+footer
+	color #fff
+	background #3B4C5C
+	padding 1em
+	height 140px
+	clear both
+	li 
+		display inline-block
+		font-weight bold
+		list-style none
+		padding 0.5em
+		position relative
+		vertical-align top
+		cursor pointer
+		a 
+			color #fff
+			text-decoration none
+	p
+		margin-top 0
+		padding-top	1em
+		line-height 1.4em
+	.left
+		display inline-block
+		vertical-align top
+		float left
+		text-align left
+		margin-left 10em
+	.right
+		width 193px
+		display inline-block
+		vertical-align top
+		float right
+		margin-right 10em
+	.title-footer
+		margin-top 1em
+		font-size 1.2em
+		font-weight bold
+		text-align center
+	.social-footer
+		ul
+			margin 0
+			padding 0
+		li
+			font-size 1.4em
+		a 
+			padding 3px
+	#face 
+		span:hover 
+			color #3b5999
+	#twitt
+		span:hover 
+			color #1dcaff
+	#goog
+		span:hover 
+			color #dd4b39
+
+.section80
+	width 80%
+	margin 0 auto
+	.wrap-image
+		margin 0 2em
+	.wrap-texto
+		width auto
+		margin 0 2em
+		text-align left
+.img-circle
+	border-radius 50%
+	border 5px #ecf0f1 solid
+.left
+	float left
+
+// Productos
+.products
+	margin-top 2em
+	span
+		color verde_claro
+	.products-item:nth-child(odd)
+		.products-head
+			background #185F8A
+
+.products-item
+	transition all 0.5s ease-in-out
+	background #fff
+	box-shadow 1px 1px 5px #ccc
+	margin 1em
+	display inline-block
+	vertical-align top
+	p
+		padding 1em
+	p:nth-child(odd)
+		background #EAF3F3
+
+.products-item:hover
+	margin-top 0.7em
+	box-shadow 0px 0px 15px #000
+.products-head
+	color #fff
+	padding 12px 0 0
+	position relative
+	padding 1em
+	background #185F8A
+	width 210px
+	h3
+		margin 0
+
+.products-head:after
+	border-top-color #2ecc71
+	border-left 98px solid transparent
+	border-right 98px solid transparent
+	border-top 25px solid transparent
+	content ""
+	left 6px
+	position absolute
+	top 100%
+.precio
+	color rgb(37, 161, 37)
+	font-weight bold
+	font-size 1.8em
+	border-top 2px dashed
+	border-bottom 2px dashed
+	padding 0.5em
+
+// estilos Portfolio
+.portfolio
+	ul
+		padding 0
+	li
+		margin 1em
+		display inline-block
+		vertical-align top
+		list-style none
+		border-radius 5px
+		box-shadow 1px 1px 5px #ccc
+	// li:hover
+	// 	.portfolio-item
+	// 	.item-detail
+	// 		display block
+	
+	figure
+		position relative
+		margin 5px
+		padding 2px
+		img
+			width 250px
+			height 200px
+
+.portfolio-item
+	margin 0 auto
+	padding 0px
+	height 100%
+	background #fff
+			
+	.item-detail
+		margin 0 auto
+		height 140px
+		width 250px
+		top 0
+		color #030303		
+		p
+			margin 5px
+		.item-title
+			font-weight bold
+			margin 5px
+			a
+				color #000
+				text-decoration none
+
+/* Efecto Imagen Home*/		
+		
+.vista
+	width 100%
+	height 100%
+	margin 0 auto
+	overflow hidden
+	position relative
+	text-align center
+	cursor default
+.vista .mascara 
+	width 100%
+	height 100%
+	margin 0 auto
+	position absolute
+	overflow hidden
+	top 0
+	left 0
+.vista img
+	display block
+	position relative
+.vista h2 
+	text-transform uppercase
+	color #fff
+	text-align center
+	position relative
+	font-size 17px
+	padding 10px
+	margin 20px 0 0 0
+	span
+		font-size 2em
+.vista p 
+	font-style italic
+	font-size 12px
+	position relative
+	color #fff
+	padding 10px 20px 20px
+	text-align center
+
+/* valores iniciales*/
+
+.vista img
+	transitio all 0.2s linear
+
+.vista .mascara 
+	opacity 0
+	background-color rgba(0,0,0,0.7) /* Color naranja con 0.7 de opacidad */
+	transition all 0.4s ease-in-out
+	cursor pointer
+
+.vista h2 
+	opacity 0
+	transform translateY(-100px)
+	transition all 0.2s ease-in-out
+
+.vista p 
+	opacity 0
+	transform translateY(100px)
+	transition all 0.2s linear
+
+/* valores finales*/
+
+.vista:hover .mascara 
+	opacity 1
+
+.vista:hover h2
+	opacity 1
+	transform translateY(50px)
+
+.vista:hover p
+	opacity 1
+	transform translateY(0px)
+
+.vista:hover p
+	transition-delay 0.1s
+
+.vista:hover a.informacion
+	transition-delay 0.2s
+
+/* Fin----Efecto Imagen Home*/			
+
+.tinynav
+	display none
+.contactForm
+	width 70%
+	display inline-block
+	vertical-align top
+	input
+		border none
+
+	p 
+		
+		label
+			font-weight bold
+			display inline-block
+			padding 5px 0
+		input
+			padding 0 3px
+			height 25px
+			width 95%
+			border-radius 3px
+			box-shadow 1px 1px 5px #ccc
+		textarea
+			border none
+			width 95%
+			vertical-align top
+			border-radius 3px
+			box-shadow 1px 1px 5px #ccc
+.form
+	width 80%
+
+.wrap-contact
+	text-align left
+	margin 0 auto
+	padding 1em
+	border-radius 5px
+	width 80%
+.contact-info
+	width 28%
+	display	inline-block
+	vertical-align top
+	
+/* styles for tablet */
+@media screen and (max-width: 1050px)
+	#logo-wrap p
+		position relative
+		top auto
+		left auto
+		width 20%
+		display inline-block
+	#logo-wrap a 
+		position relative
+		top 12px
+		left 0
+	#header-logo
+		width 19%
+		position relative
+		width 100%
+		height 60px
+		left auto
+	#main-nav
+		width 100%
+		height 41px
+		border-bottom 1px solid #ccc
+		border-top 1px solid #ccc
+		margin-top 10px
+	header
+		height 115px
+	#main-menu 
+		li
+			margin 0.2em .2em 0.2em .2em
+			padding none
+	.content-wrap
+		padding-top 115px
+
+
+
+    /* styles for mobile */
+
+@media screen and (max-width: 880px)
+	footer 
+		.left
+			margin 0 2em
+		.right
+			margin 0 2em
+	.social
+		width 27%
+		top 10px
+		right 0px
+		li
+			width 12px
+			height 12px
+			margin 0
+	.portfolio
+		li
+			width 40%
+		figure
+			img
+				width 220px
+				height 170px
+	.descrip-header
+		padding 20px 0px
+	#main-header
+		margin 0 0.5em
+		background-size 43%
+		height auto
+	.step
+		width 35%
+
+@media screen and (max-width: 678px)
+	footer 
+		height auto
+		li
+			margin 0.2em
+		.left
+			width auto
+			float none
+			margin 0
+			display block
+			text-align center
+		.right
+			width auto
+			float none
+			margin 0
+	.social
+		display	none
+	.area-circles
+		width 80%
+	#main-nav 
+		select
+			height 40px
+			width 100%
+			background #fff
+			color #000
+			font-size 1em
+			margin 0 auto
+			padding 0.3em
+	.portfolio
+		li
+			display block
+			width 75%
+			margin 1em auto
+		figure
+			img
+				width 200px
+				height 150px
+				margin 0 auto
+	#main-header
+		background none
+		margin 0 auto
+	.descrip-header
+		padding 20px 0px
+	.tinynav
+		display block 
+	#main-menu
+		display none
+	.portfolio-item
+		height auto
+		.item-detail
+			width auto
+			 	p 
+				margin 5px 0px 5px 0
+	.contactForm
+		width 80%
+	.products-item
+		width 80%
+		border 1px solid #ccc
+		
+	.products-head
+		width auto
+	.form
+		width 100%
+	.contact-info
+		width 100%
+		margin 4em auto
+	.contactForm
+		width 95%
+	.step
+		width 60%
+		span
+			display none
+		
+

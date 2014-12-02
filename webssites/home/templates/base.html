@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>{% block title %} Bienvenido {% endblock %}</title>
+			{% block css %}
+			<link rel="stylesheet" href="{{STATIC_URL}}css/estilos.css">
+			<link rel="stylesheet" href="{{STATIC_URL}}css/fonts.css">
+			<script  src="{{STATIC_URL}}js/modernizr-2.6.2.min.js"></script>
+			<script  src="{{STATIC_URL}}js/prefixfree.min.js"></script>
+			<script src="{{STATIC_URL}}js/jquery-2.1.1.min.js"></script>
+			{% endblock %}
+			
+	</head>
+	<body>
+		
+		<header>
+			<div id="header-wrap">
+				<div id="header-logo">
+					<div id="logo-wrap">
+						<a id="logo"><img src="{{STATIC_URL}}images/logo-ws.png" alt=""></a>
+						<p>Webssites</p>
+					</div>
+					
+				</div>
+				<nav id="main-nav">
+					<ul id="main-menu">
+						<li><a href="{% url "index" %}">Home </a></li>
+						<li><a href="{% url "empresa" %}">La Empresa </a></li>
+						<li><a href="{% url "disenoweb" %}">Diseño Web</a><!-- <span class="icon-arrow-down7"></span> -->
+							<!-- <ul class="submenu">
+								<li>
+									<a href="">Diseño Web </a><span class=" icon-uniE6D8"></span>
+								</li>
+								<li>
+									<a href="">Programación </a><span class=" icon-uniE6D8"></span>
+								</li>
+								<li>
+									<a href="">Rediseño Web </a><span class=" icon-uniE6D8"></span>
+								</li>
+							</ul> -->
+						</li>
+						<li><a href="{% url "marketing" %}">Marketing </a>
+						<li><a href="{% url "portfolio" %}">Portfolio </a>
+						</li>
+
+						<li><a href="{% url "contacto" %}">Contacto </a></li>
+					</ul>
+				</nav>
+				<nav class="social">
+					<ul>
+						<li id="face"><a href="https://www.facebook.com/pages/Webssites/129730923841181" target="blank"><span class="icon-facebook"></span></a></li>
+						<li id="twitt"><a href="https://www.twitter.com/twebssites" target="blank"><span class="icon-twitter"></span></a></li>
+						<li id="goog"><a href="https://plus.google.com/+WebssitesAr" target="blank"><span class=" icon-googleplus"></span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="content-wrap">
+			{% block content %}
+
+			{% endblock %}
+		</div>			
+			<footer>
+				<div class="left">
+					<div class="title-footer">Contáctanos</div>
+					<p>
+						<span class="icon-location2"></span> Roma 247 - Córdona - Argentina.
+						<br>
+						<span class="icon-mobile"></span> (54) 351 2712833
+						<br>
+						<span class="icon-mail5"> ventas@webssites.com.ar</span> 
+						
+					</p>
+				</div>
+				<div class="right">
+					<div class="title-footer">Síguenos en:</div>
+					<nav class="social-footer">
+					<ul>
+						<li id="face"><a href="https://www.facebook.com/pages/Webssites/129730923841181" target="blank"><span class="icon-facebook"></span></a></li>
+						<li id="twitt"><a href="https://www.twitter.com/twebssites" target="blank"><span class="icon-twitter"></span></a></li>
+						<li id="goog"><a href="https://plus.google.com/+WebssitesAr" target="blank"><span class=" icon-googleplus"></span></a></li>
+					</ul>
+				</nav>
+				</div>
+				
+			</footer>
+			
+		
+	</body>
+	{% block js %}
+	<script src="{{STATIC_URL}}js/tinynav.min.js"></script>
+	<script  src="{{STATIC_URL}}js/main.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-33027190-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	{% endblock %}
+</html>

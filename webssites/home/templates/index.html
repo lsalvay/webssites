@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}Precio páginas web - publicidad en google {% endblock %}
+{% block content %}
+<section class="intro"> 
+	<div id="main-header"> 
+		<div class="descrip-header">
+			<h1> Diseñamos tú página web</h1>
+			<ul>
+				<li>Diseños <span>modernos</span></li>
+				<li>Adaptables a <span>dispositivos móviles</span></li>
+				<li>Páginas optimizadas para <span>buscadores</span></li>
+				<li>Los mejores <span>precios</span></li>
+				<li>Consigue <span>presencia</span> en la <span>web</span></li>
+				<li>Garantizamos tu <span>satisfacción</span></li>
+			</ul>
+			<a class="btn yellow" href="{% url "contacto" %}">CONSULTANOS YA</a>
+
+		</div>
+	</div>
+            
+</section>
+<section class="points">
+	<article class="area-circles">
+		<h2>Diseño y desarrollo web</h2>
+		<div class="circle">
+			<span class="icon-display"></span>
+		</div>
+		<h3>
+			Diseñamos páginas 100% adaptables a dispositivos móviles.
+			Nuestra atención es personalizada, para que paso a paso hagamos realidad tú proyecto web.
+			Contamos con la experiencia y estudios necesarios para ofrecer la mejor y más moderna tecnología en diseño y desarrollo web.
+			¿Quieres ver nuestros planes?
+		</h3>
+		<div class="more"><a href="{% url "disenoweb" %}">Leer más..</a></div>
+	</article>
+	<article class="steps">
+		<br>
+		<h2>¿Cómo lo hacemos?</h2>
+		<div class="step" >
+			<h2 class="number">1º</h2>
+			<h3>Recibimos tu consulta o pedido.<span class="icon-arrow-right"></span></h3>
+			
+		</div>
+		<div class="step" >
+				<h2 class="number">2º</h2>
+			
+			<h3>Te mostramos cuales son las mejores alternativas para tu producto o proyecto.<span class="icon-arrow-right"></span></h3>
+			
+		</div>
+		<div class="step" >
+			<h2 class="number">3º</h2>
+			<h3>Comenzamos a desarrollar tu producto y publicamos los avances para recibir tus observaciones.<span class="icon-arrow-right"></span></h3>
+		</div>
+		<div class="step" >
+			<h2 class="number">4º</h2>
+			<h3>Al finalizar publicamos tu proyecto en la web.</h3>
+		</div>
+		
+	</article>
+		
+	</div>
+	<article class="area-circles">
+		<h2>Marketing Online</h2>
+		<div class="circle">
+			<span class="icon-megaphone"></span>
+		</div>
+		<h3>
+			Creamos tu campaña Ad-Words para que logres estar en la primera posición de acuerdo a las palabras claves más convenientes para tu negocio y concretar tus ventas o contactos a través de tu página web.
+		</h3>
+		<div class="more"><a href="{% url "marketing" %}">Leer más..</a></div>
+	</article>
+	
+	
+	
+</section>
+
+{% endblock %}
